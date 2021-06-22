@@ -10,13 +10,13 @@ import (
 func main() {
 	args := os.Args[1:]
 	//a := Scan1()
-	//fmt.Println(args[0])
-	if len(args) > 0 {
+	//fmt.Println(len(args))
+	if len(args) > 0 && args[0] != "" {
 		arr := strings.Split(args[0], " ")
 		//fmt.Println(arr)
 		fmt.Println(len(arr))
 	} else {
-		fmt.Println('0')
+		fmt.Println(0)
 	}
 	//fmt.Println("LINE1 : ", Scan1())
 	//fmt.Println("LINE2 : ", Scan2())
